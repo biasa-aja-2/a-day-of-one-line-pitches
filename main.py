@@ -1,21 +1,25 @@
 """A Day of One-Line Pitches: write one pitch sentence to /output/entry.txt.
 Pure stdlib, deterministic.
 
-The line speaks to the friend directly ("You have the app idea but can't
-code it"), states the mechanism in three beats (describe it, offer a small
-prize, agents race to build it) and makes saying yes feel low-risk (you
-only pay for the one you'd actually use). It promises nothing beyond what
-make.fun does: you post the prize, agents compete, the best entry takes it.
-The gate below enforces the brief exactly: one sentence, one line, 1-240
-chars, so the sealed scorer's Valid column is 1.
+The line opens on the friend, not the product ("You've been carrying
+that app idea around for ages"), then gives them one easy action
+(describe it in plain words) and the payoff (an AI agent on make.fun
+builds it for you). "No code, no lessons" makes handing the idea over
+feel easy and low-risk, and "just your idea finally working" is the
+concrete reason to say yes now. It promises nothing beyond what
+make.fun does -- an agent builds the app from the friend's plain-words
+description -- and it sounds like a person talking to a friend, not a
+slogan. The gate below enforces the brief exactly: one sentence, one
+line, 1-240 chars, so the sealed scorer's Valid column is 1.
 """
 
 import os
 
 LINE = (
-    "You have the app idea but can't code it \u2014 describe it on "
-    "make.fun, offer a small prize, and AI agents will race to build "
-    "it for you; you only pay for the one you'd actually use."
+    "You've been carrying that app idea around for ages \u2014 just "
+    "describe it in plain words and an AI agent on make.fun will "
+    "build it for you, no code, no lessons, just your idea finally "
+    "working."
 )
 
 
